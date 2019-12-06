@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Lesons 3</title>
+</head>
+<body>
+	<script>
+		var age;
+
+		do {
+			age = prompt("Сколько Вам лет?");
+
+			if (age.trim() == "") {
+				alert("Поле не может быть пустым!");
+			} else if (isNaN(age)) {
+				alert("Поле должно содержать только цифры!");
+			} else if (age == 0) {
+				alert("Пожалуйста, введите значение больше 0");
+			}
+			else break;
+		} while (true)
+
+		if (age == 1) {
+			alert("Вам " + age + " год");
+		} else if (age < 5) {
+			alert("Вам " + age + " года");
+		} else if (age <= 20) {
+			alert("Вам " + age + " лет");
+		} else if (age % 10 == 0) {
+			alert("Вам " + age + " лет");
+		}else if (age % 10 == 1) {
+			alert("Вам " + age + " год");
+		} else if (age % 10 < 5) {
+			alert("Вам " + age + " года");
+		} else {
+			alert("Вам " + age + " лет");
+		}
+	</script>
+</body>
+</html>
